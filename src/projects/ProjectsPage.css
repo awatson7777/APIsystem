@@ -1,0 +1,7 @@
+.row{
+    vertical-align: auto;
+    align-items: center;
+    align-self: center;
+    padding: left 100px;
+    position: relative;
+}

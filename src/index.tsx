@@ -1,8 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
 import App from './App';
+import './App.css';
+import { BrowserRouter } from "react-router-dom";
 import reportWebVitals from './reportWebVitals';
+
+interface ImageProps extends React.ImgHTMLAttributes<HTMLImageElement> {}
+export default ({ ...props }: ImageProps) => {
+  return <img {...props} />;
+};
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
